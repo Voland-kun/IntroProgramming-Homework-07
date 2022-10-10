@@ -48,5 +48,9 @@ void print2DArray(double[,] arrayToPrint)
     }
 }
 
-double[,] generateArray = generate2DArray(7,5,-100,100);
+Console.WriteLine("Введите количество строк:");
+int arrayRows = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите количество столбцов:");
+int arrayColumns = Convert.ToInt32(Console.ReadLine());
+double[,] generateArray = generate2DArray(arrayRows,arrayColumns,-100,100);
 print2DArray(generateArray);
